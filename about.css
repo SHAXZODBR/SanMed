@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+.clr {
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+html,
+body {
+  height: 100%;
+}
+.container-site {
+  max-width: 1400px;
+  margin: auto;
+}
+.links-logo li {
+  display: inline-block;
+  margin: 8px;
+  margin-top: 38px;
+}
+.headsection h1 {
+  color: rgb(55, 155, 155);
+  font-size: 3.5rem;
+  padding-bottom: 1.5rem;
+}
+.headsection h2 {
+  padding-bottom: 1.5rem;
+}
+
+.links-logo {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  gap: 2rem;
+}
+.links-logo li {
+  margin-top: 22px;
+  padding: 8px;
+  margin-left: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #000000;
+  text-align: center;
+  width: 87px;
+}
+.links-logo a {
+  color: black;
+  text-align: left;
+  position: relative;
+  left: -10px;
+}
+.links-logo li:hover {
+  line-height: 10px;
+  text-decoration: underline;
+  background-color: aqua;
+  cursor: pointer;
+}
+.logo {
+  float: left;
+  margin: 20px;
+  margin-top: 0px;
+  margin-right: 0;
+  border-radius: 50px;
+}
+.bgimage {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(pictures/Navbar.jpg);
+  background-position: center;
+
+  background-attachment: fixed;
+  /* background: url(https://theembazaar.com/demo/vivotheme/naino-med/assets/images/banner_2.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 100%;
+
+  align-items: center;
+  gap: 100px;
+}
+
+#navbar {
+  background-color: rgb(37, 86, 66);
+  position: fixed;
+  z-index: 100;
+  width: 93%;
+  margin-left: 4%;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.doctor {
+  border-radius: 50%;
+  padding-top: 100px;
+}
+
+.headsection {
+  color: rgb(0, 0, 0);
+  padding: 2rem;
+  margin-right: 0;
+  margin-left: 80px;
+}
+
+.mis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  height: 60vh;
+  margin-top: 100px;
+}
+.grid-item {
+  background-color: rgb(239, 255, 255);
+}
+.vl {
+  border-left: 6px solid rgb(14, 104, 114);
+  height: 100px;
+}
+.vl1 {
+  border-left: 6px solid rgb(14, 104, 114);
+  height: 100px;
+  position: absolute;
+  top: 3000px;
+}
+.nav-item {
+  list-style: none;
+}
+
+.text-body-secondary {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.link-body-emphasis {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.journey {
+  position: relative;
+  top: 200px;
+}
+.J {
+  margin-top: 50px;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(14, 104, 114);
+  border-radius: 4px;
+  color: aliceblue;
+  position: relative;
+  right: -630px;
+}
+.J p {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.line {
+  position: relative;
+  margin-top: 0;
+  border-left: 6px solid rgb(14, 104, 114);
+  height: 1000px;
+  position: absolute;
+  left: 700px;
+}
+.line-years {
+  line-height: 200px;
+  position: absolute;
+  top: 2000px;
+  left: 700px;
+}
+
+.right {
+  position: absolute;
+  background: aqua;
+  text-align: right;
+  height: 130px;
+  width: 400px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  float: right;
+  right: 40px;
+  top: 300px;
+}
+.r1 {
+  position: absolute;
+  margin-top: 400px;
+}
+.right::before {
+  content: "";
+  position: absolute;
+  visibility: visible;
+  top: -1px;
+  right: -10px;
+  border: 10px solid transparent;
+  border-top: 10px solid #ccc;
+}
+
+.right::after {
+  content: "";
+  position: absolute;
+  visibility: visible;
+  top: 0px;
+  right: -8px;
+  border: 10px solid transparent;
+  border-top: 10px solid aqua;
+  clear: both;
+}
+.left {
+  position: absolute;
+  background: rgb(66, 164, 23);
+  color: aliceblue;
+  text-align: left; /* Align text to the left */
+  height: 130px;
+  width: 400px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  float: left; /* Float it to the left */
+  left: 130px; /* Adjust left position as needed */
+  top: 100px;
+}
+
+/* Style for the left chat box triangle */
+.left::before {
+  content: "";
+  position: absolute;
+  visibility: visible;
+  top: -1px;
+  left: -10px; /* Adjust left position as needed */
+  border: 10px solid transparent;
+  border-top: 10px solid #ccc; /* Match the background color of the chat box */
+}
+
+/* Clear floats to maintain proper layout */
+.left::after {
+  content: "";
+  display: table;
+  position: absolute;
+  visibility: visible;
+  top: 0px;
+  left: -8px;
+  border: 10px solid transparent;
+  border-top: 10px solid rgb(66, 164, 23);
+  clear: both;
+}
+.partner-grid {
+  display: grid;
+  gap: 1px;
+  color: aliceblue;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: #146754;
+  height: 50vh;
+  position: relative;
+  top: 1450px;
+}
+.partner-grid-item {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+}
+
+.container {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #333; /* Background color for the entire footer */
+  color: #fff; /* Text color */
+  font-family: Arial, sans-serif; /* Font family */
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  top: 3670px;
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Section header styles */
+h5 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Navigation links styles */
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #007bff; /* Hover color for links */
+}
+.row {
+  display: flex;
+  gap: 200px;
+  padding: 50px;
+  justify-content: center;
+}
+
+/* Form styles */
+form {
+  text-align: left;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #666;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Hover background color for buttons */
+}
+
+/* Copyright and social media icons styles */
+.py-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.py-4 p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.list-unstyled {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.list-unstyled li {
+  margin-right: 10px;
+}
+
+.link-body-emphasis {
+  color: #007bff; /* Color for social media icons */
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.link-body-emphasis:hover {
+  color: #0056b3; /* Hover color for social media icons */
+}
+
+.nav-item {
+  padding-bottom: 20px;
+}
+.blanck {
+  margin: 0;
+  padding: 1000px;
+  background-color: #126a6e;
+  position: absolute;
+  bottom: 1px;
+}
