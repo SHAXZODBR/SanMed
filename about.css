@@ -87,10 +87,11 @@ body {
   background-color: rgb(37, 86, 66);
   position: fixed;
   z-index: 100;
-  width: 93%;
+  width: 73.5% !important;
   margin-left: 4%;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  transition: top 0.5s;
 }
 .doctor {
   border-radius: 50%;
@@ -111,6 +112,11 @@ body {
   gap: 30px;
   height: 60vh;
   margin-top: 100px;
+}
+
+.grid-item h1,
+p {
+  padding: 0px;
 }
 .grid-item {
   background-color: rgb(239, 255, 255);
@@ -373,4 +379,248 @@ form {
   background-color: #126a6e;
   position: absolute;
   bottom: 1px;
+}
+@media (max-width: 768px) {
+  .container-site {
+    max-width: 700px;
+    margin: 0;
+  }
+  html body {
+    max-width: 100%;
+  }
+  #navbar {
+    background-color: rgb(37, 86, 66);
+    position: fixed;
+    z-index: 100;
+    width: 87% !important;
+    margin-left: 2%;
+  }
+  .links-logo {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 0rem;
+  }
+  .b0 {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+  }
+  .links-logo li {
+    margin: 10px;
+    padding: 5px;
+    margin-left: 0px;
+    border-radius: 10px;
+  }
+  .links-logo a {
+    text-align: left;
+    position: relative;
+    left: -10px;
+  }
+  .links-logo li:hover {
+    line-height: 12px;
+  }
+  .logo {
+    display: none;
+    float: left;
+    margin: 0px;
+  }
+  .links-logo li:nth-child(2) {
+    display: none;
+  }
+  .links-logo li:nth-child(3) {
+    display: none;
+  }
+  .bgimage {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(pictures/ab1.jpg);
+    height: 800px;
+    width: 100%;
+
+    align-items: center;
+  }
+  .headsection {
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    margin-right: 0;
+    margin-top: 150px;
+    margin-left: 30px;
+  }
+  .mis-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px;
+    height: 90vh;
+    margin-top: 100px;
+  }
+  .grid-item {
+    background-color: rgb(239, 255, 255);
+  }
+  .grid-item img {
+    display: none;
+  }
+  .grid-item p {
+    font-size: medium;
+    line-height: 30px;
+  }
+  .partner-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    top: 1240px;
+  }
+  .n1 {
+    display: none;
+  }
+  .partner-grid:nth-child(1) {
+    display: none;
+  }
+  .partner-grid:nth-child(8) {
+    display: none;
+  }
+  .partner-grid:nth-child(7) {
+    display: none;
+  }
+  .journey {
+    top: 100px;
+  }
+  .J {
+    margin-top: 30px;
+    width: 150px;
+    height: 40px;
+    left: 130px;
+  }
+  .J p {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .line {
+    position: relative;
+    height: 900px;
+    position: absolute;
+    left: 200px;
+  }
+  .line-years {
+    line-height: 200px;
+    position: absolute;
+    top: 2000px;
+    left: 120px;
+  }
+  .years {
+    position: relative !important;
+    top: -40px !important;
+    line-height: 150px !important;
+    left: 64px !important;
+    color: rgb(14, 104, 114);
+  }
+  .years1 {
+    position: relative !important;
+    top: 60px !important;
+    line-height: 150px !important;
+    left: 64px !important;
+    color: rgb(14, 104, 114);
+  }
+
+  .right {
+    position: absolute;
+    text-align: left;
+    line-height: 0px;
+    height: 270px;
+    width: 140px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    float: right;
+    left: -110px;
+    top: 200px;
+  }
+  .r1 {
+    position: absolute;
+    margin-top: 400px;
+  }
+  .right::before {
+    content: "";
+    position: absolute;
+    visibility: visible;
+    top: -1px;
+    right: -10px;
+    border: 10px solid transparent;
+    border-top: 10px solid #ccc;
+  }
+
+  .right::after {
+    content: "";
+    position: absolute;
+    visibility: visible;
+    top: 0px;
+    right: -8px;
+    border: 10px solid transparent;
+    border-top: 10px solid aqua;
+    clear: both;
+  }
+  .left {
+    position: absolute;
+    text-align: left; /* Align text to the left */
+    height: 270px;
+    width: 140px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    float: left; /* Float it to the left */
+    left: 110px; /* Adjust left position as needed */
+    top: 50px;
+    margin-right: 0 !important;
+  }
+
+  /* Style for the left chat box triangle */
+  .left::before {
+    content: "";
+    position: absolute;
+    visibility: visible;
+    top: -1px;
+    left: -10px; /* Adjust left position as needed */
+    border: 10px solid transparent;
+    border-top: 10px solid #ccc; /* Match the background color of the chat box */
+  }
+
+  /* Clear floats to maintain proper layout */
+  .left::after {
+    content: "";
+    display: table;
+    position: absolute;
+    visibility: visible;
+    top: 0px;
+    left: -8px;
+    border: 10px solid transparent;
+    border-top: 10px solid rgb(66, 164, 23);
+    clear: both;
+  }
+  .left h1 {
+    margin: 0;
+    top: 10px !important;
+    line-height: 20px !important;
+  }
+  .left p {
+    line-height: 18px;
+    top: 30px !important;
+    display: flex;
+    justify-content: right;
+  }
+  .right h1 {
+    margin: 0;
+    top: 10px !important;
+    line-height: 20px !important;
+  }
+  .right p {
+    line-height: 18px;
+    top: 30px !important;
+    display: flex;
+    justify-content: right;
+  }
+  .b1 {
+    display: none !important;
+  }
+
+  .b0 {
+    width: 10px !important;
+  }
 }
