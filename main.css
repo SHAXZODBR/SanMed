@@ -26,9 +26,11 @@ body {
   color: rgb(55, 155, 155);
   font-size: 3.5rem;
   padding-bottom: 1.5rem;
+  margin-left: 100px;
 }
 .headsection h2 {
   padding-bottom: 1.5rem;
+  margin-left: 100px;
 }
 
 .links-logo {
@@ -39,16 +41,14 @@ body {
 }
 .links-logo li {
   margin-top: 22px;
-  padding: 8px;
+  padding: 8px 0px;
   margin-left: 20px;
-  background-color: #ffffff;
   border-radius: 10px;
   color: #000000;
   text-align: center;
-  width: 87px;
 }
 .links-logo a {
-  color: black;
+  color: rgb(245, 245, 245);
   text-align: left;
   position: relative;
   left: -10px;
@@ -56,8 +56,10 @@ body {
 .links-logo li:hover {
   line-height: 10px;
   text-decoration: underline;
-  background-color: aqua;
   cursor: pointer;
+}
+.links-logo a:hover {
+  color: black;
 }
 .logo {
   float: left;
@@ -70,7 +72,7 @@ body {
 .bgimage {
   display: flex;
   flex-wrap: wrap;
-  background-image: url(pictures/bg-2.jpg);
+  background-image: url(pictures/Navbar.jpg);
   background-position: center;
 
   background-attachment: fixed;
@@ -87,8 +89,8 @@ body {
   background-color: rgb(37, 86, 66);
   position: fixed;
   z-index: 100;
-  width: 93%;
-  margin-left: 4%;
+  width: 100%;
+  margin-left: 0%;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   transition: top 0.5s;
@@ -102,7 +104,7 @@ body {
   color: rgb(0, 0, 0);
   padding: 2rem;
   margin-right: 0;
-  margin-left: 80px;
+  margin-left: 0px;
 }
 
 .service-flex {
@@ -129,7 +131,9 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
-  height: 70vh;
+  height: 100vh;
+  position: relative;
+  top: 900px;
 }
 .hidden {
   display: none;
@@ -179,8 +183,8 @@ body {
 .first-grid-service {
   grid-column: span 3;
   background-color: aliceblue;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
+  border-radius: 0;
+  margin-top: 400px;
 }
 .big-size {
   font-size: 38px;
@@ -213,9 +217,9 @@ body {
   cursor: pointer;
 }
 .our-services {
-  height: 2000px;
-  position: relative;
-  margin-top: 800px;
+  height: 100vh;
+  position: absolute;
+  margin-top: 250px;
 }
 
 /* Add this CSS code to your existing stylesheet */
@@ -316,14 +320,12 @@ body {
   background-position: center;
   background-attachment: fixed;
   height: 700px;
-  position: relative;
-  top: -1730px;
 }
 
 .cover {
   /* background-color: rgb(48, 189, 175); */
   height: 700px;
-  margin-top: 90vh;
+  margin-top: 400px;
   z-index: 10;
 }
 .stat-flex {
@@ -353,7 +355,7 @@ h3 {
   cursor: pointer;
 }
 
-#doctors {
+/* #doctors {
   background-color: rgb(14, 104, 114);
   position: relative;
   top: -1600px;
@@ -381,13 +383,53 @@ h3 {
 }
 .doc-flex h4 {
   padding: 12px 0px;
+} */
+.partner-grid {
+  display: grid;
+  gap: 1px;
+  color: aliceblue;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: #146754;
+  height: 50vh;
+  position: relative;
+  top: 250px;
 }
+.partner-grid-item {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #d7d3d3;
+}
+.vl1 {
+  border-left: 6px solid rgb(14, 104, 114);
+  height: 100px;
+  position: absolute;
+  top: 1100px;
+}
+/* .partner-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  top: 1240px;
+} */
+/* .n1 {
+  display: none;
+}
+.partner-grid:nth-child(1) {
+  display: none;
+}
+.partner-grid:nth-child(8) {
+  display: none;
+}
+.partner-grid:nth-child(7) {
+  display: none;
+} */
 .appointment-form {
   position: relative;
   text-align: center;
   width: 800px;
   height: 400px;
-  top: 40px;
+  top: 100px;
   background-color: #f3f9f8;
   z-index: 11;
   box-sizing: border-box;
@@ -431,7 +473,7 @@ button {
 }
 #comments {
   position: relative;
-  top: -1200px;
+  top: 200px;
 }
 .pic-comment {
   display: flex;
@@ -475,7 +517,7 @@ button {
   gap: 2rem;
 }
 .contact-top-bg {
-  background-color: #000000;
+  background-color: rgb(14, 104, 114);
 }
 .links-logo-contact li {
   display: inline-block;
@@ -486,13 +528,11 @@ button {
   border-radius: 10px;
   color: white;
   text-align: left;
-  width: 87px;
+  width: 100% !important;
 }
 .links-logo-contact a {
   color: rgb(255, 255, 255);
   text-align: left;
-  position: relative;
-  left: -10px;
 }
 .links-logo-contact li:hover {
   line-height: 10px;
@@ -645,11 +685,25 @@ button {
   font-family: Arial, sans-serif; /* Font family */
   position: absolute;
   width: 100%;
-  text-align: left;
+  text-align: center;
   top: 5870px;
-  border-radius: 30px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  border-radius: 0px;
+}
+ul.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+ul.nav li {
+  margin-right: 20px; /* Adjust as needed to add space between the links */
+}
+
+ul.nav a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Section header styles */
@@ -705,7 +759,7 @@ form {
 /* Copyright and social media icons styles */
 .py-4 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -821,6 +875,7 @@ form {
     gap: 5px;
     height: 80vh;
   }
+
   .grid-item {
     background-color: aliceblue;
     color: rgb(0, 0, 0);
@@ -837,6 +892,7 @@ form {
     padding: 10px; /* Add padding as needed */
     background-color: aliceblue;
     border-radius: 10px; /* Add rounded corners */
+    margin: 0px 300px;
   }
   .first-grid-service {
     grid-column: span 2;
@@ -911,7 +967,7 @@ form {
     background-attachment: fixed;
     height: 630px;
     position: relative;
-    top: -1730px;
+    top: 1730px;
   }
   .stat-flex {
     flex-wrap: wrap;
@@ -947,7 +1003,7 @@ form {
     text-align: center;
     max-width: 413px;
     height: 600px;
-    top: 80px;
+    top: 1180px;
     background-color: #f3f9f8;
     z-index: 11;
     box-sizing: border-box;
@@ -978,13 +1034,27 @@ form {
     background-color: #333; /* Background color for the entire footer */
     color: #fff; /* Text color */
     font-family: Arial, sans-serif; /* Font family */
-    position: absolute;
+    position: relative;
     width: 100%;
     text-align: left;
-    top: 6870px;
-    border-radius: 30px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    top: 870px;
+    border-radius: 0px;
+  }
+  ul.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+
+  ul.nav li {
+    margin-right: 20px; /* Adjust as needed to add space between the links */
+  }
+
+  ul.nav a {
+    text-decoration: none;
+    color: #fff;
   }
   /*contact*/
   .contact-text {

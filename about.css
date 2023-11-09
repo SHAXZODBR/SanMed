@@ -39,16 +39,15 @@ body {
 }
 .links-logo li {
   margin-top: 22px;
-  padding: 8px;
-  margin-left: 20px;
-  background-color: #ffffff;
+  padding: 8px 0px;
+  margin-left: 0px;
   border-radius: 10px;
   color: #000000;
   text-align: center;
-  width: 87px;
+  width: 100px;
 }
 .links-logo a {
-  color: black;
+  color: rgb(245, 245, 245);
   text-align: left;
   position: relative;
   left: -10px;
@@ -56,8 +55,10 @@ body {
 .links-logo li:hover {
   line-height: 10px;
   text-decoration: underline;
-  background-color: aqua;
   cursor: pointer;
+}
+.links-logo a:hover {
+  color: #000000;
 }
 .logo {
   float: left;
@@ -87,8 +88,7 @@ body {
   background-color: rgb(37, 86, 66);
   position: fixed;
   z-index: 100;
-  width: 73.5% !important;
-  margin-left: 4%;
+  width: 100% !important;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   transition: top 0.5s;
@@ -125,12 +125,7 @@ p {
   border-left: 6px solid rgb(14, 104, 114);
   height: 100px;
 }
-.vl1 {
-  border-left: 6px solid rgb(14, 104, 114);
-  height: 100px;
-  position: absolute;
-  top: 3000px;
-}
+
 .nav-item {
   list-style: none;
 }
@@ -178,7 +173,51 @@ p {
   top: 2000px;
   left: 700px;
 }
-
+#doctors {
+  background-color: rgb(14, 104, 114);
+  position: relative;
+  top: 1300px;
+  height: 100vh;
+}
+.info-pos {
+  text-align: center;
+  color: #fff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.info-pos h1 {
+  padding: 30px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.main-doc {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.doc-flex {
+  text-align: center;
+  color: #fff;
+}
+.doc-flex h4 {
+  padding: 12px 0px;
+}
+.service-info h3 {
+  padding: 20px;
+  padding-bottom: 15px;
+  margin-top: 50px;
+  font-size: 34px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  position: relative;
+  top: -120px;
+}
+.service-info > p {
+  font-size: 20px;
+  padding-bottom: 80px;
+  text-align: center;
+  color: #fff;
+}
 .right {
   position: absolute;
   background: aqua;
@@ -254,7 +293,7 @@ p {
   border-top: 10px solid rgb(66, 164, 23);
   clear: both;
 }
-.partner-grid {
+/* .partner-grid {
   display: grid;
   gap: 1px;
   color: aliceblue;
@@ -269,7 +308,7 @@ p {
   display: flex;
   justify-content: center;
   background-color: aliceblue;
-}
+} */
 
 .container {
   max-width: 1480px;
@@ -280,13 +319,27 @@ p {
   font-family: Arial, sans-serif; /* Font family */
   position: absolute;
   width: 100%;
-  text-align: left;
-  top: 3670px;
-  border-radius: 30px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  text-align: center;
+  top: 3770px;
+  border-radius: 0px;
 }
 
+ul.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+ul.nav li {
+  margin-right: 20px; /* Adjust as needed to add space between the links */
+}
+
+ul.nav a {
+  text-decoration: none;
+  color: #fff;
+}
 /* Section header styles */
 h5 {
   font-size: 1.2rem;
@@ -340,7 +393,7 @@ form {
 /* Copyright and social media icons styles */
 .py-4 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -401,10 +454,7 @@ form {
     padding: 10px;
     gap: 0rem;
   }
-  .b0 {
-    margin-right: 0 !important;
-    padding-right: 0 !important;
-  }
+
   .links-logo li {
     margin: 10px;
     padding: 5px;
@@ -464,12 +514,12 @@ form {
     font-size: medium;
     line-height: 30px;
   }
-  .partner-grid {
+  /* .partner-grid {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     top: 1240px;
-  }
-  .n1 {
+  } */
+  /* .n1 {
     display: none;
   }
   .partner-grid:nth-child(1) {
@@ -480,7 +530,7 @@ form {
   }
   .partner-grid:nth-child(7) {
     display: none;
-  }
+  } */
   .journey {
     top: 100px;
   }
